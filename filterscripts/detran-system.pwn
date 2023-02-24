@@ -34,15 +34,15 @@ new trafficTicketsCount = 0;
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
-	return 0;
+  return 0;
 }
 
 stock GetPlayerUsername(playerid)
 {
-	new playerName[MAX_PLAYER_NAME];
-	GetPlayerName(playerid, playerName, sizeof(playerName));
+  new playerName[MAX_PLAYER_NAME];
+  GetPlayerName(playerid, playerName, sizeof(playerName));
 
-	return playerName;
+  return playerName;
 }
 
 stock SetVehicleLicensePlate(vehicleId, vehicleLicensePlate[]) {
@@ -53,7 +53,8 @@ stock SetVehicleLicensePlate(vehicleId, vehicleLicensePlate[]) {
   return 1;
 }
  
-stock GetVehicleLicensePlate(vehicleId) {
+stock GetVehicleLicensePlate(vehicleId)
+{
   new vehicleLicensePlate[9];
 
   for(new i = 0; i < 9; i++) {
